@@ -1,0 +1,38 @@
+#reg{
+    border: 1px solid red;
+    width: 20%;
+}
+
+#reg input{
+}
+
+#cont-basic {
+    display: flex;
+}
+
+#con-bar {
+    width: 150px;
+}
+
+#con-page {
+    min-width: 500px;
+    padding: 10% 5%;
+    display: flex;
+
+}
+
+#cont-basic input {
+    font-size: 110%;
+    background: none;
+    border: none;
+    opacity: 0.7;
+}
+
+#clients {
+    opacity: 0.6;
+}
+
+#btn_add {
+    display: inline-block;
+    margin-left: 20%;
+}
