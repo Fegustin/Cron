@@ -14,8 +14,19 @@
 
 <body>
 
-<div class="container" id="reg">
-        <form>
+<!-- Modal wondow -->
+<div class="modal fade" id="exampleModal">
+  	<div class="modal-dialog" role="document">
+    	<div class="modal-content">
+      		<div class="modal-header">
+        		<h5 class="modal-title">Заголовок модального окна</h5>
+        		<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          			<span aria-hidden="true">&times;</span>
+        		</button>
+      		</div>
+      		<div class="modal-body">
+        		
+        		<form id="regmodal">
              
               <div class="form-group">
                
@@ -26,12 +37,23 @@
               <div class="form-group">
                 <label for="exampleInputPassword1">Пароль</label>
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Введите пароль">
+                <label for="exampleInputPassword1">Повторите пароль</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Введите пароль">
               </div>
             
-              <button type="submit" class="btn btn-primary">Регистрация</button>
+                
         </form>
+        		
+      		</div>
+      		<div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Регистрация</button>
+        		<button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+      		</div>
+    	</div>
+  	</div>
 </div>
    
+   <!-- Basic page -->
     <div class="container" id="cont-basic">
        
         <div class="container" id="con-bar">
@@ -68,7 +90,7 @@
 
         </div>
         
-        <form>
+        <form id="reg">
              
               <div class="form-group">
                
@@ -81,7 +103,8 @@
                 <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Введите пароль">
               </div>
             
-              <button type="submit" class="btn btn-primary">Регистрация</button>
+              <button type="submit" class="btn btn-primary">Вход</button>    
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">Регистрация</button>
         </form>
 
     </div>
