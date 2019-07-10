@@ -2,10 +2,6 @@
     width: 30%;
 }
 
-#cont-basic {
-    display: flex;
-}
-
 #con-bar {
     width: 150px;
 }
@@ -31,4 +27,37 @@
 #btn_add {
     display: inline-block;
     margin-left: 20%;
+}
+.box__reg {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.main {
+    display: none;
+}
+
+.activeMain {
+    display: flex;
+}
+
+.dontSing {
+    display: none;
+}
+
+.label__password-replace {
+    margin-top: 2%;
+}
+
+/* МЕДИА запросы */
+@media screen and (max-width: 770px) {
+    .btnOpenGroup {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .openBtn {
+        margin-bottom: 5%;
+    }
 }
